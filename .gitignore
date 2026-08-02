@@ -6,12 +6,20 @@ __pycache__/
 # C extensions
 *.so
 
-# Distribution / packaging
+# Distribution / packaging / binaries
 build/
+dist/
+Output/
+*.zip
+*.exe
 PyInstaller/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Internal Planning Specs
+PRODUCT_PLAN.md
+STANDARDS.md
 
 # Virtual environments
 venv/
