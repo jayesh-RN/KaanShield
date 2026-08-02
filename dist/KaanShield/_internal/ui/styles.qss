@@ -1,0 +1,184 @@
+/*
+  KaanShield Ultimate Target Mockup Stylesheet
+  ===========================================
+  Main Window Background: #0b0e17
+  Glass Card Panels:       #121826
+  Active Card Accent:      #f97316 (Warm Orange Glow)
+  Secondary Accent:        #38bdf8 (Cyan)
+  Purple Accent:           #a78bfa (Purple)
+  Green Accent:            #22c55e (Connected / Green)
+*/
+
+QMainWindow {
+    background-color: #0b0e17;
+    color: #ffffff;
+}
+
+QWidget {
+    font-family: "Segoe UI", Roboto, -apple-system, sans-serif;
+    color: #ffffff;
+}
+
+/* Scroll Area */
+QScrollArea {
+    border: none;
+    background: transparent;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: rgba(255, 255, 255, 0.02);
+    width: 6px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:vertical {
+    background: #f97316;
+    border-radius: 3px;
+}
+
+/* Glass Panels */
+QFrame#panelGlass {
+    background-color: #121826;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+}
+
+QFrame#panelGlass:hover {
+    border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+/* Speech Bubble Card (Purple Glass Glow) */
+QFrame#speechBubbleCard {
+    background-color: #1c2035;
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    border-radius: 18px;
+}
+
+/* Mode Select Cards (ANC ON, Transparency, ANC OFF, Ambient Level) */
+QFrame#modeSelectCard {
+    background-color: #171e2e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+}
+
+QFrame#modeSelectCard:hover {
+    background-color: #1e283d;
+    border: 1px solid rgba(249, 115, 22, 0.4);
+}
+
+QFrame#modeSelectCard[active="true"] {
+    background-color: #232d42;
+    border: 2px solid #f97316;
+}
+
+/* Voice Mode Quick Switch Pills */
+QPushButton#voicePill {
+    background-color: #171e2e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #94a3b8;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QPushButton#voicePill:hover {
+    color: #ffffff;
+    border: 1px solid #f97316;
+}
+
+QPushButton#voicePill[active="true"] {
+    background-color: #f97316;
+    border: 1px solid #fdba74;
+    color: #ffffff;
+}
+
+/* Quick Action Hotkey Cards */
+QFrame#quickHotkeyCard {
+    background-color: #171e2e;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+}
+
+QFrame#quickHotkeyCard:hover {
+    border: 1px solid rgba(249, 115, 22, 0.4);
+}
+
+/* Top Status Badges Bar */
+QFrame#topStatusBadge {
+    background-color: #151b29;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+/* Sliders (Orange Track & Glow Thumb) */
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #1e293b;
+    border-radius: 3px;
+}
+
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #f97316, stop:1 #fb923c);
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #fde047;
+    border: 2px solid #f97316;
+    width: 16px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    border-radius: 8px;
+}
+
+/* Toggle Switches */
+QCheckBox::indicator {
+    width: 34px;
+    height: 18px;
+    border-radius: 9px;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #334155;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #f97316;
+}
+
+/* ComboBox */
+QComboBox {
+    background-color: #151b29;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0b0e17;
+    selection-background-color: #f97316;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #151b29;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #f97316;
+    border: 1px solid #fdba74;
+    color: #ffffff;
+}

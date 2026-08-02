@@ -1,0 +1,23 @@
+{
+  "product_name": "KaanShield",
+  "selected_device_name": "Harmonics Twins 33",
+  "selected_device_address": "{0.0.1.00000000}.{C085E6E9-E2E3-4034-8F0E-EE582FB93C24}",
+  "voice_language": "english",
+  "voice_feedback_enabled": true,
+  "hud_duration_ms": 2500,
+  "hotkeys_enabled": true,
+  "hotkey_anc_toggle": "<ctrl>+<alt>+a",
+  "hotkey_mic_mute": "<ctrl>+<alt>+m",
+  "anc_mode": "ANC_OFF",
+  "ambient_level": 5,
+  "start_with_windows": true,
+  "auto_detect_on_connect": true,
+  "voice_personality": "desi",
+  "hud_enabled": true,
+  "hud_position": "top_right",
+  "active_driver": "mock",
+  "audio_mixer_enabled": true,
+  "launch_on_startup": false,
+  "minimize_to_tray": true,
+  "theme": "dark_glass"
+}
