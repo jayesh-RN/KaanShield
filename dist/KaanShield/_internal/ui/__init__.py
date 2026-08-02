@@ -1,3 +1,0 @@
-"""
-KaanShield UI Package.
-"""
